@@ -1,32 +1,15 @@
 @(message: String)
 
 @main("Welcome to Play 2.0") {
-    
+
    
-  @* We use a fluid layout from bootstrap to adapt to different resolutions *@
-    <div class="container-fluid">
+ <div class="container-fluid">
         <div class="row-fluid">
-      
+
             <div class="span10">
                 <!--Body content-->
                 <h1>A Responsive page</h1>
-                <p>The idea of this sample is to show 2 important concepts in a simplified environment:</p>
-                
-                <p><strong>Responsive layout</strong> is not just a Buzzword. We are in a mobile world, were you can't guess the resolution of the screen browsing your web application.
-                    <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> provides styles to facilitate the construction of responsive layouts, which is great.
-                    But Responsive is not only "hide some elements when you are in a tiny screen". Elements hidden by CSS are downloaded anyway, and in a mobile network that can be problematic.
-                </p>
-                <p>
-                    <strong>Mobile First</strong> is a concept that tries to solve that. The idea is to design the minimal layout that works for your application, that layout that mobile users will see, and add more options if the user has a bigger screen.
-                    How? By conditionally loading elements, using Javascript to modify your HTML or via Ajax requests.
-                </p>
-                <p>
-                    This single page will use media queries and javascript to delay loading some content and to not render other content according to your viewport.
-                    It is a simplified environment, but it should give an idea on how to develop these concepts for bigger projects.
-                    To test the CSS media queries, the border of the body will change color as per viewport size.
-                </p>
-          </div>
-           </div>
-            </div>
+                @(message)
+
           
 }
